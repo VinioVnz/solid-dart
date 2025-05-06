@@ -21,6 +21,7 @@ abstract class Database{
 }
 
 class Mysql implements Database{
+  @override
   void salvar(String dado){
     print('Salvando "$dado" no MySQL');
   }

@@ -13,10 +13,10 @@ class Quadrado extends Retangulo {
   Quadrado(double tamanho) : super(tamanho, tamanho);
 } */
 
-abstract class CalculaArea{
+abstract class Forma{
   double area();
 }
-class Retangulo implements CalculaArea{
+class Retangulo implements Forma{
   double altura;
   double largura;
 
@@ -24,7 +24,7 @@ class Retangulo implements CalculaArea{
 
   double area() => altura * largura;
 }
-class Quadrado implements CalculaArea{
+class Quadrado implements Forma{
   double tamanho;
   Quadrado(this.tamanho);
   

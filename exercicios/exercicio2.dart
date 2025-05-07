@@ -13,14 +13,10 @@ abstract class Funcionario {
 
 class Gerente implements Funcionario {
   @override
-  double calcular(){
-    return 5000;
-  }
+  double calcular() => 5000;
 }
 
 class Desenvolvedor implements Funcionario {
   @override
-  double calcular(){
-    return 4000;
-  }
+  double calcular() => 4000;
 }

@@ -7,18 +7,18 @@
     return 0;
   }
 } */
-abstract class CalculadoraSalario {
+abstract class Funcionario {
   double calcular();
 }
 
-class Gerente implements CalculadoraSalario {
+class Gerente implements Funcionario {
   @override
   double calcular(){
     return 5000;
   }
 }
 
-class Desenvolvedor implements CalculadoraSalario {
+class Desenvolvedor implements Funcionario {
   @override
   double calcular(){
     return 4000;

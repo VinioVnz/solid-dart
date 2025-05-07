@@ -8,15 +8,20 @@
   }
 } */
 abstract class Funcionario {
-  double calcular();
+  double calculadoraSalario();
 }
 
 class Gerente implements Funcionario {
   @override
-  double calcular() => 5000;
+  double calculadoraSalario() => 5000;
 }
 
 class Desenvolvedor implements Funcionario {
   @override
-  double calcular() => 4000;
+  double calculadoraSalario() => 4000;
+}
+
+class CalculadoraSalario{
+  double calcular(Funcionario funcionario) 
+    => funcionario.calculadoraSalario();
 }
